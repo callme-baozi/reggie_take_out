@@ -30,7 +30,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
      * @param converters
      */
     @Override
-    protected void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
         MappingJackson2HttpMessageConverter messageConverter=new MappingJackson2HttpMessageConverter();
         messageConverter.setObjectMapper(new JacksonObjectMapper());
         converters.add(0,messageConverter);

@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Slf4j
 @SpringBootApplication
-@ServletComponentScan
+@ServletComponentScan // 过滤器等扫描
 @EnableTransactionManagement // 开始事务处理
 @EnableCaching // 开启注解缓存
 public class ReggieApplication {

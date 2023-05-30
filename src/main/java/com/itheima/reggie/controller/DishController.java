@@ -160,7 +160,7 @@ public class DishController {
     }
 
     /**
-     * 批量起售  -- 这行及以下的戴安是自己写的
+     * 批量起售  -- 这行及以下的代码是自己写的
      * @param ids
      * @return
      */

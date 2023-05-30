@@ -18,14 +18,14 @@ import java.io.IOException;
 @WebFilter(filterName = "loginCheckFilter",urlPatterns = "/*")
 public class LoginCheckFilter implements Filter {
 
-    public static final AntPathMatcher PATH_MATCHER=new AntPathMatcher();
+    public static final AntPathMatcher PATH_MATCHER=new AntPathMatcher(); // 用来匹配路径的
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
-        HttpServletRequest request= (HttpServletRequest) servletRequest;
+        HttpServletRequest request= (HttpServletRequest) servletRequest; // 向下转型
         HttpServletResponse response= (HttpServletResponse) servletResponse;
         // 获取本次请求的uri
-        String requestURI = request.getRequestURI();
+        String requestURI = request.getRequestURI();  //  /backend.index.html
         log.info("拦截到请求{}", requestURI);
 
         String []urls=new String[]{

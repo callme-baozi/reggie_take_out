@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 
+/**
+ * 配置mybatis-plus的分页插件
+ */
 @Configuration
 public class MybatisPlusConfig {
 
